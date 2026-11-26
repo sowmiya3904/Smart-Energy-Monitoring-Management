@@ -1,0 +1,24 @@
+# Java / Maven
+backend/target/
+**/target/
+*.class
+*.log
+
+# Android / Gradle / IDE
+android-app/.gradle/
+android-app/**/build/
+android-app/local.properties
+.idea/
+*.iml
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Exclude duplicate nested project
+/Smart-Energy-Management-System/
+
+# Exclude duplicate nested project
+/Smart-Energy-Management-System/

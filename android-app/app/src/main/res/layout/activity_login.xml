@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center_vertical" android:padding="24dp">
+
+    <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/logo_sk"
+        android:contentDescription="SK Software" android:scaleType="fitCenter" android:layout_marginBottom="12dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="SK Software" android:textSize="28sp" android:textStyle="bold" android:textColor="@color/text"
+        android:layout_marginBottom="24dp" />
+
+    <EditText android:id="@+id/etServer" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Server URL" android:inputType="textUri" android:text="http://10.20.57.53:8081"
+        android:textColor="@color/text" android:textColorHint="@color/muted" />
+    <EditText android:id="@+id/etUser" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Username" android:inputType="text" android:text="admin"
+        android:textColor="@color/text" android:textColorHint="@color/muted" />
+    <EditText android:id="@+id/etPass" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Password" android:inputType="textPassword" android:text="admin123"
+        android:textColor="@color/text" android:textColorHint="@color/muted" />
+
+    <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Sign in" android:textColor="@color/text"
+        android:background="@drawable/bg_button" />
+    <TextView android:id="@+id/tvError" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:textColor="@color/orange" />
+</LinearLayout>
